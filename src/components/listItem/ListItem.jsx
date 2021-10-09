@@ -4,7 +4,7 @@ import './listitem.scss';
 const ListItem = () => {
     return (
         <div className='listItem'>
-            item
+            <img src = 'https://dailyresearchplot.com/wp-content/uploads/2020/11/Emily-in-Paris-1200x900.jpg' alt = '' />
         </div>
     )
 }
