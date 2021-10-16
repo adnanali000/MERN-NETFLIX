@@ -1,10 +1,16 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './listitem.scss';
 import {PlayArrow , Add ,ThumbUpAltOutlined, ThumbDownOutlined } from '@material-ui/icons';
 
-const ListItem = () => {
+const ListItem = ({index}) => {
+    const [isHovered, setIsHovered] = useState(false);
+
     return (
-        <div className='listItem'>
+        <div className='listItem' 
+            style={{left: isHovered && index * 225 - 50 + index * 2.5}}
+            onMouseEnter={()=>setIsHovered(true)} 
+            onMouseLeave={()=>setIsHovered(false)}
+        >
             <img src = 'https://dailyresearchplot.com/wp-content/uploads/2020/11/Emily-in-Paris-1200x900.jpg' alt = '' />
             <div className="itemInfo">
                 <div className="icons">
