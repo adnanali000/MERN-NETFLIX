@@ -22,18 +22,18 @@ const ListItem = ({index}) => {
 
             <div className="itemInfo">
                 <div className="icons">
-                    <PlayArrow />
-                    <Add />
-                    <ThumbUpAltOutlined />
-                    <ThumbDownOutlined />
+                    <PlayArrow className='icon' />
+                    <Add className='icon'/>
+                    <ThumbUpAltOutlined className='icon'/>
+                    <ThumbDownOutlined className='icon'/>
                 </div>
-                <div className="itemIntoTop">
+                <div className="itemInfoTop">
                     <span>1 hour 20 mins</span>
                     <span className='limit'>+16</span>
                     <span>1999</span>
                 </div>
                 <div className="desc">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae eaque explicabo laborum ad quisquam corporis hic sunt itaque, odit dolorem necessitatibus.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae eaque explicabo.
                 </div>
                 <div className="genre">
                     Action
