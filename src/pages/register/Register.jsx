@@ -39,7 +39,7 @@ export default function Register() {
                     </div>
                     ):(
                         <form className="input">
-                        <input type="password" placeholder='enter password' ref={passwordRef} />
+                        <input type="password" placeholder='password' ref={passwordRef} />
                         <button className="registerButton" onClick={handleFinish}>Start</button>
                         </form> 
                     )}
@@ -47,4 +47,5 @@ export default function Register() {
             </div>
         </div>
     )
+
 }
