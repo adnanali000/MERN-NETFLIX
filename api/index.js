@@ -12,14 +12,19 @@ dotenv.config();
 mongoose.connect(process.env.MONGO_URL,{
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    // useCreateIndex: true
 })
-.then(()=>console.log('Server connected successfully'))
+.then(()=>console.log('database connected successfully'))
 .catch(err=>console.log(err))
 
 
+//accept express json
+app.use(express.json());
+
+//listen register route
 app.use('/api/auth',authRoute);
 
+
+//run app on 8800
 app.listen(8800,()=>{
     console.log('backend server running');
 })
